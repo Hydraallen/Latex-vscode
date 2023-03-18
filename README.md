@@ -19,7 +19,7 @@ Github: https://github.com/Hydraallen/Latex-vscode
 
 ## Windows
 
-Video for Reference->
+Video for Reference->https://www.bilibili.com/video/BV1wP411f7gG/
 
 1. Install Texlive （about 4G）
 
@@ -84,7 +84,7 @@ Install `MacTex.pkg`
 Install with `homebrew`
 
 ```
-brew cask install mactex
+brew install mactex --cask
 ```
 
 
@@ -118,6 +118,8 @@ Remember to change the route of Xelatex, PDFLatex, etc.
 ## Linux
 
 ### Arch/Manjaro
+
+article for reference -> https://www.bilibili.com/read/cv22494481
 
 1. Install VScode and install `Latex Workshop` in VScode
 
