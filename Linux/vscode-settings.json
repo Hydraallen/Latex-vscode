@@ -1,0 +1,142 @@
+{
+    //------------------------------LaTeX 配置----------------------------------
+    // 设置是否自动编译："onSave"当代码被保存时自动编译文件；"never"从不自动编译，即需编写者手动编译文档;"onFileChange"在检测任何依赖项中的文件更改(甚至被其他应用程序修改)时构建项目，即当检测到代码被更改时就自动编译tex文件
+    "latex-workshop.latex.autoBuild.run": "onSave",
+    //右键菜单,设置是否将编译文档的选项出现在鼠标右键的菜单
+    "latex-workshop.showContextMenu": true, //false
+    //从使用的包中自动补全命令和环境
+    "latex-workshop.intellisense.package.enabled": true,
+    //编译出错时设置是否弹出气泡设置
+    "latex-workshop.message.error.show": false,
+    "latex-workshop.message.warning.show": false,
+    // 编译工具和命令
+    "latex-workshop.latex.tools": [
+        {
+            "name": "xelatex",
+            "command": "/usr/bin/xelatex", //通过终端获取完整路径
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "pdflatex",
+            "command": "/usr/bin/pdflatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "latexmk",
+            "command": "/usr/bin/latexmk",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "-outdir=%OUTDIR%",
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "bibtex",
+            "command": "/usr/bin/bibtex",
+            "args": [
+                "%DOCFILE%"
+            ]
+        }
+    ],
+    // 用于配置编译链
+    //其中name是标签，也就是出现在工具栏中的链名称；tool是name标签所对应的编译顺序
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "PDFLaTeX",
+            "tools": [
+                "pdflatex"
+            ]
+        },
+        {
+            "name": "XeLaTeX",
+            "tools": [
+                "xelatex"
+            ]
+        },
+        {
+            "name": "BibTeX",
+            "tools": [
+                "bibtex"
+            ]
+        },
+        {
+            "name": "LaTeXmk",
+            "tools": [
+                "latexmk"
+            ]
+        },
+        {
+            "name": "xelatex -> bibtex -> xelatex*2",
+            "tools": [
+                "xelatex",
+                "bibtex",
+                "xelatex",
+                "xelatex"
+            ]
+        },
+        {
+            "name": "pdflatex -> bibtex -> pdflatex*2",
+            "tools": [
+                "pdflatex",
+                "bibtex",
+                "pdflatex",
+                "pdflatex"
+            ]
+        }
+    ],
+    //文件清理。此属性必须是字符串数组
+    "latex-workshop.latex.clean.fileTypes": [
+        "*.aux",
+        "*.bbl",
+        "*.blg",
+        "*.idx",
+        "*.ind",
+        "*.lof",
+        "*.lot",
+        "*.out",
+        "*.toc",
+        "*.acn",
+        "*.acr",
+        "*.alg",
+        "*.glg",
+        "*.glo",
+        "*.gls",
+        "*.ist",
+        "*.fls",
+        "*.log",
+        "*.fdb_latexmk"
+    ],
+    //设置为onFaild 在构建失败后清除辅助文件："onFailed"当编译失败时，清除辅助文件；"onBuilt"无论是否编译成功，都选择清除辅助文件；"never"无论何时，都不清除辅助文件
+    "latex-workshop.latex.autoClean.run": "onFailed",
+    // 使用上次的recipe编译组合
+    "latex-workshop.latex.recipe.default": "lastUsed",
+    // 用于反向同步的内部查看器的键绑定。ctrl/cmd +点击(默认)或双击
+    "latex-workshop.view.pdf.internal.synctex.keybinding": "double-click",
+    //Windows使用 SumatraPDF 预览编译好的PDF文件
+    // 设置VScode内部查看生成的pdf文件："external"使用外部pdf查看器查看;"tab"使用vscode内置pdf查看器;"browser"使用电脑默认浏览器进行pdf查看
+    "latex-workshop.view.pdf.viewer": "external",
+    // PDF查看器用于在\ref上的[View on PDF]链接："auto"由编辑器根据情况自动设置;“tabOrBrowser”使用vscode内置pdf查看器或使用电脑默认浏览器进行pdf查看；“external”使用外部pdf查看器查看
+    "latex-workshop.view.pdf.ref.viewer": "auto",
+    // 使用外部查看器时要执行的命令。此功能不受官方支持。
+    //"latex-workshop.view.pdf.external.viewer.command": "/Applications/PDF Expert.app", // 注意修改路径
+    // 使用外部查看器时，latex-workshop.view.pdf.external.view .command的参数。此功能不受官方支持。%PDF%是用于生成PDF文件的绝对路径的占位符。
+    "latex-workshop.view.pdf.external.viewer.args": [
+        "%PDF%"
+    ],
+    // 将synctex转发到外部查看器时要执行的命令。此功能不受官方支持。
+    //"latex-workshop.view.pdf.external.synctex.command": "/Applications/PDF Expert.app", // 注意修改路径
+    "latex-workshop.intellisense.biblatexJSON.replace": {},
+}
