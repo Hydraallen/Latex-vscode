@@ -63,21 +63,106 @@ First check your system version
 
 Download MacTex on http://tug.org/mactex/
 
+![](https://raw.githubusercontent.com/Hydraallen/images/master/img/Snipaste_2023-03-18_23-24-39.png)
+
+
+
+Choose one according to your system.
+
+Remember to check `md5` for `MacTex.pkg`
+
+![](https://raw.githubusercontent.com/Hydraallen/images/master/img/Snipaste_2023-03-18_23-35-50.png)
+
+Install `MacTex.pkg`
+
+![](https://raw.githubusercontent.com/Hydraallen/images/master/img/Snipaste_2023-03-18_23-29-53.png)
+
 
 
 ### option 2
 
+Install with `homebrew`
 
+```
+brew cask install mactex
+```
+
+
+
+Test `MacTex.pkg`
+
+![](https://raw.githubusercontent.com/Hydraallen/images/master/img/Snipaste_2023-03-18_23-38-58.png)
+
+2. Install VScode  and Latex Workshop
+
+https://code.visualstudio.com/
+
+![](https://raw.githubusercontent.com/Hydraallen/images/master/img/Snipaste_2023-03-18_23-44-40.png)
+
+3. edit `setting.json` in VScode
+
+*You may refer to `Latex-vscode/Linux/vscode-setting.json`in the repository*
+
+![](https://raw.githubusercontent.com/Hydraallen/images/master/img/Snipaste_2023-03-18_23-47-34.png)
+
+Remember to change the route of Xelatex, PDFLatex, etc.
+
+![](https://raw.githubusercontent.com/Hydraallen/images/master/img/Snipaste_2023-03-18_23-48-40.png)
+
+4. testfile
+
+![](https://raw.githubusercontent.com/Hydraallen/images/master/img/Snipaste_2023-03-18_23-50-14.png)
 
 
 
 ## Linux
 
+### Arch/Manjaro
+
+1. Install VScode and install `Latex Workshop` in VScode
+
+```
+yay -S visual-studio-code-bin
+```
 
 
 
+2. Install TexLive
+
+```
+sudo pacman -S texlive-core
+sudo pacman -S texlive-most
+sudo pacman -S texlive-langchinese
+sudo pacman -S poppler-data
+```
 
 
+
+![](https://raw.githubusercontent.com/Hydraallen/images/master/img/WechatIMG379.jpeg)
+
+use `tex -v` to test
+
+![](https://raw.githubusercontent.com/Hydraallen/images/master/img/WechatIMG376.png)
+
+3. edit `setting.json` in VScode
+
+*You may refer to `Latex-vscode/Linux/vscode-setting.json`in the repository*
+
+![](https://raw.githubusercontent.com/Hydraallen/images/master/img/WechatIMG375.png)
+
+Remember to change the route of Xelatex, PDFLatex, etc.
+
+![](https://raw.githubusercontent.com/Hydraallen/images/master/img/Snipaste_2023-03-18_23-18-55.png)
+
+4. testfile
+
+![](https://raw.githubusercontent.com/Hydraallen/images/master/img/WechatIMG378.png)
+
+
+
+### **debina/ubuntu**
+
+Run `sudo apt-get install texlive-full`
 
 # Reference
 
