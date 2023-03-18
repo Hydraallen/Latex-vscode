@@ -51,7 +51,38 @@ edit `settings.json` (You may refer to `vscode-settings.json` in repository`Late
 
 ## macOS
 
+1. Install MacTex
+
+First check your system version
+
+![](https://raw.githubusercontent.com/Hydraallen/images/master/img/WechatIMG1497.png)
+
+
+
+### option 1
+
+Download MacTex on http://tug.org/mactex/
+
+
+
+### option 2
+
+
+
 
 
 ## Linux
 
+
+
+
+
+
+
+# Reference
+
+https://zhuanlan.zhihu.com/p/166523064
+
+https://github.com/James-Yu/LaTeX-Workshop/wiki/Compile#placeholders
+
+https://mp.weixin.qq.com/s/GxYrbhxiv7bIG5Ulr2XetQ
