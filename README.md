@@ -51,6 +51,8 @@ edit `settings.json` (You may refer to `vscode-settings.json` in repository`Late
 
 ## macOS
 
+Video for Reference->https://www.bilibili.com/video/BV1DM4y1z71m
+
 1. Install MacTex
 
 First check your system version
