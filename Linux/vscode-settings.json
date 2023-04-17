@@ -61,6 +61,13 @@
             ]
         },
         {
+            "name": "PDFLaTeX*2",
+            "tools": [
+                "pdflatex",
+                "pdflatex"
+            ]
+        },
+        {
             "name": "XeLaTeX",
             "tools": [
                 "xelatex"
