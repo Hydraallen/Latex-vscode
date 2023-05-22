@@ -51,6 +51,8 @@ edit `settings.json` (You may refer to `vscode-settings.json` in repository`Late
 
 ## macOS
 
+（It applies to both Intel and Apple Silicon）
+
 Video for Reference->https://www.bilibili.com/video/BV1DM4y1z71m
 
 1. Install MacTex
@@ -59,7 +61,7 @@ First check your system version
 
 ![](https://raw.githubusercontent.com/Hydraallen/images/master/img/WechatIMG1497.png)
 
-
+![](https://raw.githubusercontent.com/Hydraallen/images/master/img/Snipaste_2023-05-22_21-32-19.png)
 
 ### option 1
 
