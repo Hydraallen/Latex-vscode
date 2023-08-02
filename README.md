@@ -136,10 +136,7 @@ yay -S visual-studio-code-bin
 2. Install TexLive
 
 ```
-sudo pacman -S texlive-core
-sudo pacman -S texlive-most
-sudo pacman -S texlive-langchinese
-sudo pacman -S poppler-data
+yay -S texlive-full
 ```
 
 
