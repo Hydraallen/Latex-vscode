@@ -174,3 +174,7 @@ https://zhuanlan.zhihu.com/p/166523064
 https://github.com/James-Yu/LaTeX-Workshop/wiki/Compile#placeholders
 
 https://mp.weixin.qq.com/s/GxYrbhxiv7bIG5Ulr2XetQ
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Hydraallen/Latex-vscode&type=Date)](https://star-history.com/#Hydraallen/Latex-vscode&Date)
