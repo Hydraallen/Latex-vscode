@@ -85,7 +85,7 @@ Install `MacTex.pkg`
 
 ### option 2
 
-Install with `homebrew`
+Install with [`homebrew`](https://brew.sh/)
 
 ```
 brew install mactex --cask
