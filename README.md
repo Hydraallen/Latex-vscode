@@ -85,7 +85,7 @@ Install `MacTex.pkg`
 
 ### option 2
 
-Install with [`homebrew`](https://brew.sh/)
+Install with [`homebrew`](https://brew.sh/). If you fail to connect to the official website, you may try [mirror](https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/)
 
 ```
 brew install mactex --cask
